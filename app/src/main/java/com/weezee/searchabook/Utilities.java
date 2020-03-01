@@ -12,7 +12,8 @@ import java.net.URL;
 import java.util.ArrayList;
 
 public class Utilities {
-    private static final String  initialURL = "https://www.googleapis.com/books/v1/volumes?q=#&maxResults=20&key=AIzaSyB3mDq_sa6KRYKf43qUpxCEPL5Uf8LjBvs";
+    private static final String  initialURL = "https://www.googleapis.com/books/v1/volumes?q=#&maxResults=20&key=~~~~~~~~~~";
+    //replace all '~' characters with your own api key
 
     private static final String TAG = "Utilities";
 

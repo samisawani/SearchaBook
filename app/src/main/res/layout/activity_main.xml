@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/relative_layout"
+    >
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+
+            >
+
+            <EditText
+                android:id="@+id/edit_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="search a book"
+                android:inputType="text"
+                android:selectAllOnFocus="true"
+                android:imeOptions="actionDone"
+
+                />
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_search_black_24dp" />
+
+
+        </LinearLayout>
+        <ImageView
+            xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/no_internet"
+            android:scaleType="centerInside"
+            android:id="@+id/empty_view"
+            android:visibility="gone"/>
+
+        <ListView
+            android:paddingVertical="16dp"
+            android:id="@+id/list_view"
+            android:divider="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+
+        </ListView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
